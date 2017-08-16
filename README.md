@@ -1,21 +1,34 @@
 # RandomuserEx
 
-**TODO: Add description**
+Elixir wrapper to consume randomuser.me API.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `randomuser_ex` to your list of dependencies in `mix.exs`:
+Add ``randomuser_ex`` to your dependencies in your ``mix.exs``:
 
 ```elixir
-def deps do
+defp deps do
   [
     {:randomuser_ex, "~> 0.1.0"}
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/randomuser_ex](https://hexdocs.pm/randomuser_ex).
+and run `mix deps.get`.
 
+## Dependencies
+
+- [HTTPoison](https://github.com/edgurgel/httpoison)
+- [JSEX](https://github.com/talentdeficit/exjsx)
+
+## Usage
+
+You can see the documentation of the package on the [hexdocs website](http://hexdocs.pm/randomuser_ex/0.1.0/).
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/dreamingechoes/randomuser_ex. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://contributor-covenant.org) code of conduct.
+
+## License
+
+The package is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
