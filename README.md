@@ -53,7 +53,7 @@ gender: "male", ...}
 Here you have a list of some options that you can use to get random users:
 
 | param | description | values |
-|---|---|---|---|---|
+|---|---|---|
 | :gender | The gender of the user(s)  | `:male` or `female` |
 | :password | Format of the password generated for the user(s) | string of combinations of `upper`, `lower`, `special` and number. E.g: "upper,special,1-8" |
 | :nat | Nationality of the user(s) by the ISO code | `:au`, `:br`, `:ca`, `:ch`, `:de`, `:dk`, `:es`, `:fi`, `:fr`, `:gb`, `:ie`, `:ir`, `:nl`, `:nz`, `:tr`, `:us` |
