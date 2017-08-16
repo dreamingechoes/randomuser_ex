@@ -26,18 +26,16 @@ defmodule RandomuserEx.Mixfile do
 
   # Run "mix help compile.app" to learn about applications.
   def application do
-    [
-      applications: [:logger, :httpoison, :exjsx]
-    ]
+    [applications: [:logger, :httpoison, :poison]]
   end
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:httpoison, "~> 0.13"},
+      {:poison, "~> 3.1"},
       {:earmark, "~> 1.2", only: :dev},
       {:ex_doc, "~> 0.14", only: :dev, runtime: false},
-      {:exjsx, "~> 4.0", app: false, override: true},
-      {:httpoison, "~> 0.6"},
       {:excoveralls, "~> 0.7", only: :test},
       {:credo, "~> 0.8", only: [:dev, :test], runtime: false}
     ]
