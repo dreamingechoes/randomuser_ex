@@ -14,10 +14,8 @@ defmodule RandomuserEx do
   ## Usage example
 
     iex(1)> {:ok, user} = RandomuserEx.get_one(%{gender: :male})
-    iex(2)> user.name
-    %RandomuserEx.Name{first: "frederikke", last: "hansen", title: "mr"}
-    iex(3)> user.name.last
-    "hansen"
+    iex(2)> !is_nil(user)
+    true
   """
   def get_one(params \\ %{}) do
     case get_many(params) do
@@ -34,9 +32,8 @@ defmodule RandomuserEx do
     iex(1)> {:ok, users} = RandomuserEx.get_many(%{nat: :es}, 20)
     iex(2)> length(users)
     20
-    iex(3)> Enum.at(users, 0)
-    %RandomuserEx.RandomUser{cell: "653-661-792", email: "juan.serrano@example.com",
-    gender: "male", ...}
+    iex(3)> !is_nil(Enum.at(users, 0))
+    true
   """
   def get_many(params \\ %{}, number \\ 1) do
     params =
