@@ -1,5 +1,10 @@
 # RandomuserEx
 
+[![Docs](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat)](http://hexdocs.pm/randomuser_ex/0.1.0/)
+[![CircleCI](https://circleci.com/gh/dreamingechoes/randomuser_ex.svg?style=shield)](https://circleci.com/gh/dreamingechoes/randomuser_ex)
+[![Hex.pm](https://img.shields.io/hexpm/v/giphy_ex.svg)](https://hex.pm/packages/randomuser_ex)
+[![Ebert](https://ebertapp.io/github/dreamingechoes/randomuser_ex.svg)](https://ebertapp.io/github/dreamingechoes/randomuser_ex)
+
 Elixir wrapper to consume [randomuser.me](https://randomuser.me) API. This is just a way to make easier the use of this service in your Phoenix applications, all the credits of the development of the service are of their creators.
 
 You can see the complete documentation of the API [here](https://randomuser.me/documentation).
