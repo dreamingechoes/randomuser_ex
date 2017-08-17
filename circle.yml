@@ -22,6 +22,6 @@ dependencies:
 
 test:
   override:
-    - mix do compile --warnings-as-errors, coveralls.html
+    - mix coveralls.html
   post:
     - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
