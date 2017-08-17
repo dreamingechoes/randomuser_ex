@@ -36,7 +36,7 @@ defmodule RandomuserEx.Mixfile do
       {:poison, "~> 3.1"},
       {:earmark, "~> 1.2", only: :dev},
       {:ex_doc, "~> 0.14", only: :dev, runtime: false},
-      {:excoveralls, "~> 0.7", only: :test},
+      {:excoveralls, "~> 0.7", only: [:test, :ci]},
       {:credo, "~> 0.8", only: [:dev, :test], runtime: false}
     ]
   end
