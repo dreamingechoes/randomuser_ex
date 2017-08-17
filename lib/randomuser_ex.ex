@@ -42,7 +42,12 @@ defmodule RandomuserEx do
       |> Map.put(:format, :json)
 
     case fetch(params) do
-      {:ok, results} -> {:ok, results["users"]}
+      {:ok, results} ->
+        users = Enum.map(results["results"], fn (result) ->
+          Poison.decode!(Poison.encode!(result), as: user_structure())
+        end)
+
+        {:ok, users}
       {:error, reason} -> {:error, reason}
     end
   end
@@ -54,12 +59,7 @@ defmodule RandomuserEx do
     case HTTPoison.get(uri) do
       {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
         case Poison.decode(body) do
-          {:ok, values} ->
-            users = Enum.map(values["results"], fn (result) ->
-              Poison.decode!(Poison.encode!(result), as: user_structure())
-            end)
-
-            {:ok, %{"users" => users}}
+          {:ok, values} -> {:ok, values}
           {:error, reason} -> {:error, reason}
         end
       _ -> {:error, nil}
