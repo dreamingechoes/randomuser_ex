@@ -5,8 +5,6 @@ defmodule RandomuserEx.RandomUser do
 
   @type t :: %__MODULE__{}
 
-  alias RandomuserEx.Id
-
   defstruct [:gender, :name, :location, :email, :login,
              :registered, :phone, :cell, :id, :picture, :nat]
 end
