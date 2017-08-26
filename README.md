@@ -1,6 +1,6 @@
 # RandomuserEx
 
-[![Docs](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat)](http://hexdocs.pm/randomuser_ex/0.1.0/)
+[![Docs](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat)](http://hexdocs.pm/randomuser_ex/)
 [![CircleCI](https://circleci.com/gh/dreamingechoes/randomuser_ex.svg?style=shield)](https://circleci.com/gh/dreamingechoes/randomuser_ex)
 [![Hex.pm](https://img.shields.io/hexpm/v/giphy_ex.svg)](https://hex.pm/packages/randomuser_ex)
 [![Ebert](https://ebertapp.io/github/dreamingechoes/randomuser_ex.svg)](https://ebertapp.io/github/dreamingechoes/randomuser_ex)
@@ -16,7 +16,7 @@ Add ``randomuser_ex`` to your dependencies in your ``mix.exs``:
 ```elixir
 defp deps do
   [
-    {:randomuser_ex, "~> 0.1.0"}
+    {:randomuser_ex, "~> 0.1.1"}
   ]
 end
 ```
